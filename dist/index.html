@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Switch Recruiter</title>
+  </head>
+  <body>
+    <header class="flex justify-between p-8 sticky top-0">
+      <div>
+        <h2 class="font-bold text-2xl text-black">Switch Recruitment</h2>
+      </div>
+      <input type="checkbox" id="check" class="hidden" />
+      <label
+        for="check"
+        class="menu-bar text-2xl hover:text-yellow text-black font-bold cursor-pointer hidden"
+      >
+        <i class="fa fa-bars"></i>
+      </label>
+      <nav>
+        <div class="show">
+          <h2 class="font-bold text-2xl text-white">Switch Recruitment</h2>
+        </div>
+        <ul class="flex gap-10 text-grey font-bold">
+          <li><a href="#" class="active text-black">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        class="p-3 bg-black text-white font-bold hover:bg-yellow hover:text-black transition px-3"
+      >
+        Get Started
+      </button>
+    </header>
+    <main>
+      <section class="px-10 lg:px-20 lg:py-20 py-10 welcome">
+        <div class="pt-10">
+          <h2 class="md:text-2xl text-xl font-bold text-yellow uppercase">
+            Welcome to Switch Recruitment
+          </h2>
+          <p class="md:text-6xl text-4xl font-bold py-5 text-black">
+            Trust Us! We Will Build Your Success
+          </p>
+          <p class="pb-5 text-white text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <div class="flex gap-7">
+            <button
+              class="p-3 bg-black text-white text-sm font-bold hover:bg-yellow hover:text-black transition px-10"
+            >
+              Find a Job
+            </button>
+            <div class="text-xl hover:text-yellow flex gap-1 mt-2 text-white">
+              <p><i class="fa fa-phone"></i></p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about grid lg:grid-cols-2 px-10 lg:px-20 py-20 gap-20">
+        <div class="grid grid-cols-2 gap-6 grid-rows-2">
+          <img
+            src="images/circle-of-employees.jpg"
+            alt="circle of employees"
+            class="row-span-2"
+          />
+          <img src="images/contemporary-employees.jpg" alt="employees" />
+          <img
+            src="images/job-interview-with-potential.jpg"
+            alt="job interview"
+            class=""
+          />
+        </div>
+        <div>
+          <h2
+            class="text-xl font-bold text-yellow uppercase tracking-wider text-center lg:text-left"
+          >
+            About Us
+          </h2>
+          <p
+            class="text-4xl lg:text-5xl text-black font-bold tracking-widest py-5 text-center lg:text-left"
+          >
+            Local Excellence and Global Reach
+          </p>
+          <p class="text-sm tracking-wider py-5 text-center lg:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            consequat tempor turpis, quis egestas ligula efficitur et. Donec at
+            diam at nisl consectetur.
+          </p>
+          <div>
+            <div class="flex gap-3 mt-3">
+              <p>
+                <i class="fa fa-check-square font-bold text-2xl text-black"></i>
+              </p>
+              <div>
+                <p class="font-bold text-black text-xl">
+                  Thousands of jobs available
+                </p>
+                <p class="text-sm tracking-wider py-3">
+                  Integer pharetra lectus eget dui porttitor mattis. Etiam ut
+                  ante vestibulum nisl hendrerit gravida.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-3">
+              <p>
+                <i class="fa fa-check-square font-bold text-2xl text-black"></i>
+              </p>
+              <div>
+                <p class="font-bold text-black text-xl">
+                  The right job for your skills
+                </p>
+                <p class="text-sm tracking-wider py-3">
+                  Quisque non elementum leo. Suspendisse at mi sit amet justo
+                  aliquam lacinia. Praesent elementum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="p-3 bg-black text-white text-sm font-bold hover:bg-yellow hover:text-black transition px-10 mt-5"
+          >
+            Discover More
+          </button>
+        </div>
+      </section>
+      <section class="grid lg:grid-cols-2 px-10 lg:px-20 services gap-20 py-20">
+        <div>
+          <p
+            class="md:text-2xl text-xl font-bold text-yellow uppercase tracking-widest text-center lg:text-left"
+          >
+            Our Services
+          </p>
+          <h2
+            class="md:text-5xl text-3xl font-bold text-black tracking-widest py-5 text-center lg:text-left"
+          >
+            Right Connection and Right Employee
+          </h2>
+          <p class="text-sm text-center lg:text-left tracking-widest">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            consequat tempor turpis, quis egestas ligula efficitur et. Donec at
+            diam at nisl consectetur.
+          </p>
+          <button
+            class="p-3 bg-black text-white text-sm font-bold hover:bg-yellow hover:text-black transition px-10 mt-5"
+          >
+            Find Job Now
+          </button>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div
+            class="border rounded p-10 border-border-color hover:border-black"
+          >
+            <p
+              class="p-5 border rounded-full h-12 w-12 text-yellow bg-black flex items-center justify-center text-2xl"
+            >
+              <i class="fa fa-address-card-o"></i>
+            </p>
+            <p class="font-bold text-2xl text-black py-2">Job Portal</p>
+            <p class="text-sm tracking-wider">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </div>
+          <div class="border rounded p-10 hover:border-yellow bg-black">
+            <p
+              class="p-5 border rounded-full h-12 w-12 bg-yellow flex items-center justify-center text-2xl"
+            >
+              <i class="fa fa-briefcase text-white"></i>
+            </p>
+            <p class="font-bold text-2xl text-white py-2">Job Counselling</p>
+            <p class="text-sm tracking-wider text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </div>
+          <div
+            class="border rounded p-10 border-border-color hover:border-black"
+          >
+            <p
+              class="p-5 border rounded-full h-12 w-12 text-yellow bg-black flex items-center justify-center text-2xl"
+            >
+              <i class="fa fa-trophy"></i>
+            </p>
+            <p class="font-bold text-2xl text-black py-2">Skill Training</p>
+            <p class="text-sm tracking-wider">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </div>
+          <div
+            class="border rounded p-10 border-border-color hover:border-black"
+          >
+            <p
+              class="p-5 border rounded-full h-12 w-12 text-yellow bg-black flex items-center justify-center text-2xl"
+            >
+              <i class="fa fa-user-times"></i>
+            </p>
+            <p class="font-bold text-2xl text-black py-2">Interview Test</p>
+            <p class="text-sm tracking-wider">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="grid lg:grid-cols-2 px-10 lg:px-20 gap-20 py-20">
+        <div><img src="images/employee.png" alt="Asian woman smiling" /></div>
+        <div class="lg:py-20">
+          <p
+            class="md:text-2xl text-xl font-bold text-yellow uppercase tracking-widest text-center lg:text-left"
+          >
+            How We Work
+          </p>
+          <h2
+            class="md:text-5xl text-3xl font-bold text-black tracking-widest py-5 text-center lg:text-left"
+          >
+            Learn How to Achieve Your Goal
+          </h2>
+          <p class="text-sm text-center lg:text-left tracking-widest">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            libero dolorem harum non voluptate qui quod, delectus commodi
+            excepturi ullam error alias repellendus magnam illo saepe officia
+            quae dolores aut.
+          </p>
+          <div>
+            <div class="flex gap-3 mt-3">
+              <p class="h-10 w-10 flex items-center justify-center bg-black font-bold text-xl p-4 text-white mt-2">01</p>
+              <div>
+                <p class="text-black text-xl">Apply for Jobs</p>
+                <p class="text-sm tracking-wider py-1">
+                  Integer pharetra lectus eget dui porttitor mattis. Etiam ut
+                  ante vestibulum nisl hendrerit gravida.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-3">
+              <p class="h-10 w-10 flex items-center justify-center bg-black font-bold text-xl p-4 text-white mt-2">02</p>
+              <div>
+                <p class="text-black text-xl">
+                  Prepare for the Test & Interview
+                </p>
+                <p class="text-sm tracking-wider py-1">
+                  Integer pharetra lectus eget dui porttitor mattis. Etiam ut
+                  ante vestibulum nisl hendrerit gravida.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-3">
+              <p
+                class="h-10 w-10 flex items-center justify-center bg-black font-bold text-xl p-4 text-white mt-2"
+              >
+                03
+              </p>
+              <div>
+                <p class="text-black text-xl">Get Your Dream Job</p>
+                <p class="text-sm tracking-wider py-1">
+                  Integer pharetra lectus eget dui porttitor mattis. Etiam ut
+                  ante vestibulum nisl hendrerit gravida.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
