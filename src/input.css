@@ -7,7 +7,7 @@ body {
   color: #7a7a7a;
 }
 .welcome {
-  background-image: url(/dist/images/about-img.jpg);
+  background-image: url(../dist/images/about-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   animation: bgChange 15s ease infinite;
@@ -24,22 +24,41 @@ nav ul li:hover {
 }
 @keyframes bgChange {
   0% {
-    background-image: url(/dist/images/about-img.jpg);
+    background-image: url(../dist/images/about-img.jpg);
   }
   50% {
-    background-image: url(/dist/images/background.jpg);
+    background-image: url(../dist/images/background.jpg);
   }
   100% {
-    background-image: url(/dist/images/backgrounds.jpg);
+    background-image: url(../dist/images/backgrounds.jpg);
   }
 }
-header{
+header {
   box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 15px;
   z-index: 1000;
   background-color: rgb(255, 255, 255);
 }
-.show{
-    display: none;
+.show {
+  display: none;
+}
+.rating i {
+  color: #f5d268;
+}
+.rating {
+  display: flex;
+  gap: 10px;
+}
+.lists > p,
+.lists >li{
+    margin-bottom: 10px;
+}
+.lists li:hover{
+    color: #f5d268;
+}
+@media (max-width: 700px) {
+    .cta{
+        display: none;
+    }
 }
 @media (max-width: 900px) {
   nav ul {
@@ -73,7 +92,30 @@ header{
   }
   #check:checked ~ nav {
     transform: translateX(100%);
-    /* background-color: #fff;
-    width: 100%; */
+  }
+  .testimonial {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .testimonial {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .links{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 1101px) {
+  .testimonial {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .links{
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .direction-links{
+      grid-column: span 2;
   }
 }
